@@ -1,0 +1,251 @@
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 66px;
+    color:black;
+    line-height: 80pt;
+}
+p{
+    font-size: 18px;
+    color: black;
+}
+
+#destacados p{
+    font-size: 25px;
+    color: black;
+}
+
+.img-logo{
+    width: 90px;
+}
+.img-logo-footer{
+    width: 160px;
+}
+.nav-link{
+    font-size: 15pt;
+}
+.logo-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-welcome{
+    display: flex;
+    justify-content: center;
+}
+.d-block{
+    width: 100%;
+}
+.carousel-item {
+    height: 88vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+.content-center{
+    text-align: center;
+    margin: 0 auto 0px auto;
+}
+.destacados-contenedor{
+    position: relative;
+    overflow: hidden;
+    margin: 10px 0;
+    border-radius: 2px;
+}
+.destacados-contenedor img{
+    -moz-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.destacados-contenedor:hover img{
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.destacados-detalles{
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    z-index: 9000;
+}
+@media (max-width: 575.98px) { 
+    h1{ font-size: 20px; line-height: normal;}
+}
+#nosotros{
+    background-image: url('/images/portada-4.png');
+    background-size: cover;
+    padding-top: 150px;
+    min-height: 570px;
+    color: white;
+}
+#nosotros h1{
+    color:black;
+}
+.img-size{
+    height: 220px;
+}
+.tec-img-size{
+    height: 400px;
+}
+.tec-img-sizeb{
+    height: 50px;
+}
+.bg-light-grey{
+    background-color: rgb(216, 213, 213);
+}
+
+.bg-light-blue{
+    background-color: blue;
+}
+
+/*Categorizacion*/
+
+.wrap{
+	max-width: 1100px;
+	width: 90%;
+	margin: auto;
+}
+
+.wrap > h1{
+	color: #494B4D;
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 15px 0px;
+}
+
+.wrap > h1:after{
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #C7C7C7;
+	margin: 20px 0;
+}
+
+.store-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.category_list{
+	display: flex;
+	flex-direction: column;
+	width: 18%;
+}
+
+.category_list .category_item{
+	display: block;
+	width: 90%;
+	padding: 15px 0;
+	margin-bottom: 20px;
+	background: black;
+	border-radius: 3;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+
+/* PRODUCTOS ============*/
+
+.products-list{
+	width: 82%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.products-list .product-item{
+	width: 22%;
+	margin-left: 3%;
+	margin-bottom: 25px;
+	box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.22);
+
+	display: flex;
+	flex-direction: column;
+	align-items: baseline;
+	align-self: flex-start;
+
+	transition: all .4s;
+}
+
+.products-list .product-item img{
+	width: 100%;
+}
+
+.products-list .product-item a{
+	display: block;
+	width: 100%;
+	padding: 8px 0;
+	background: #d8d9da;
+
+	color: black;
+	text-align: center;
+	text-decoration: none;
+}
+
+/*SUBCATEGORIAS*/
+.category_list .sub_mujer, .category_list .sub_hombre, .category_list .sub_infante {
+	background: blue;
+}
+.category_list .ct_item-active{
+	background: #6e7072;
+}
+.wrap .category_list .category_item.hide{
+	display: none;
+}
+.wrap .category_list .category_item.show{
+	display: block;
+	animation: show .5s ease;
+}
+
+/*PAGINACION*/
+
+
+.wrap .products-list .product-item.hide{
+	display: none;
+}
+.wrap .products-list .product-item.show{
+	display: block;
+	animation: show .5s ease;
+}
+
+
+.wrap .pagination{
+	width: 100%;
+	float: left;
+	padding:15px;
+	text-align: center;
+}
+.wrap .pagination div{
+	display: inline-block;
+	margin:0 10px;
+}
+.wrap .pagination .page{
+	color:gray;
+}
+.wrap .pagination .prev,.wrap .pagination .next{
+ color:#000;
+ border:1px solid #000;
+ font-size:15px;
+ padding:7px 15px;
+ cursor: pointer;
+}
+
+.wrap .pagination .prev.disabled,
+.wrap .pagination .next.disabled{
+	border-color: gray;
+	color:gray;
+	pointer-events: none;
+}
+
+
