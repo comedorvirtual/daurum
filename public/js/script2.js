@@ -1,6 +1,21 @@
-var $divs = $(".mujer");
-//const galleryItems = document.querySelector(".products-list").children;
+var position = $(".navbar").first().position().top;
+$(window).on('scroll',function(){
+	if(jQuery(window).scrollTop()>50){
+		console.log("bajo 50)")
+		jQuery('.navbar').removeClass('bg-lightblue');
+		jQuery('.navbar').addClass('shrink');
+	}else{
+		jQuery('.navbar').removeClass('shrink');
+		console.log("regreso 50");
+	}
+});
+
+//var p = position.position();
+console.log(position);
+
 var galleryItems = document.getElementsByClassName("product-item");
+
+if(galleryItems.length != 0){
 const submujer = document.getElementsByClassName("sub_mujer");
 const subhombre = document.getElementsByClassName("sub_hombre");
 const subinfante = document.getElementsByClassName("sub_infante");
@@ -21,10 +36,10 @@ console.log(pagination)
 jq2 = jQuery.noConflict();
 jq2(function ($) {
 
-	// AGREGANDO CLASE ACTIVE AL PRIMER ENLACE ====================
+	// AGREGANDO CLASE ACTIVE AL PRIMER ENLACE 
 	$('.category_list .category_item[category="all"]').addClass('ct_item-active');
 
-	// FILTRANDO PRODUCTOS  ============================================
+	// FILTRANDO PRODUCTOS 
 
 	$('.category_item').click(function () {
 		
@@ -108,16 +123,10 @@ jq2(function ($) {
 		}
 		console.log(pagination)
 		console.log(galleryItems.length);
-		// AGREGANDO CLASE ACTIVE AL ENLACE SELECCIONADO
+		// AGREGANDO CLASE ACTIVE
 		$('.category_item').removeClass('ct_item-active');
 		$(this).addClass('ct_item-active');
 
-		// OCULTANDO PRODUCTOS =========================
-		/*$('.product-item').css('transform', 'scale(0)');
-		*/
-		
-
-		// MOSTRANDO PRODUCTOS =========================
 		function showProduct() {
 			showItems();
 			console.log("showPRoducto");
@@ -217,7 +226,6 @@ function showSubItemsInfante(){
 		subinfante[i].classList.add("show");
 	}
 }
-
 function cargar() {
 	showItems();
 	check();
@@ -226,13 +234,4 @@ function cargar() {
 	hideSubItemsInfante();
 }
 window.onload = cargar();
-
-
-
-
-
-
-
-
-
-
+}

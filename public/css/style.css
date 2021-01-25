@@ -1,5 +1,12 @@
+*{
+    margin: 0;
+	box-sizing: border-box;
+}
 html{
     scroll-behavior: smooth;
+}
+body{
+	margin:0;
 }
 h1{
     font-size: 66px;
@@ -10,14 +17,69 @@ p{
     font-size: 18px;
     color: black;
 }
+.shrink{
+	width: 100%;
+	transition: all ease-in-out 0.8s;
+	background: #e3f2fd;
+}
+
+/*-------VIDEO--------*/
+#idportada{
+	overflow: hidden;
+	margin: 0%;
+	padding: 0%;
+}
+video{	
+	width: 100%;
+	background-size: cover;
+}
+/*------------------------------------*/
+
+
+/*----IMAGEN INICIAL----*/
+.contenedor-imagen-inicial{
+	box-sizing: content-box;
+	margin: 0%;
+	padding: 0%;
+	position: relative;	
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+}
+.contenedor-imagen-inicial img{	
+	padding: 0%;
+	width: 100%;
+	opacity: 75%;
+	background-size: cover;
+}
+
+.contenedor-descripcion img{
+	position: absolute;
+    left: 50%;
+    top: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+}
+.contenedor-descripcion h1{
+	font-family: 'Yusei Magic', sans-serif;
+	text-align: center;
+	font-size: 80px;
+	color: black;
+}
+
+
+/*------------------------------------*/
+
 
 #destacados p{
     font-size: 25px;
     color: black;
 }
-
+.bg-lightblue{
+	background:#e3f2fd;
+}
 .img-logo{
-    width: 90px;
+    width: 120px;
 }
 .img-logo-footer{
     width: 160px;
@@ -37,21 +99,12 @@ p{
 .d-block{
     width: 100%;
 }
-.carousel-item {
-    height: 88vh;
-    min-height: 300px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
-
-
 .content-center{
     text-align: center;
     margin: 0 auto 0px auto;
 }
+/*-------Destacados-----------*/
+
 .destacados-contenedor{
     position: relative;
     overflow: hidden;
@@ -75,11 +128,19 @@ p{
     left: 25px;
     z-index: 9000;
 }
-@media (max-width: 575.98px) { 
-    h1{ font-size: 20px; line-height: normal;}
+@media (max-width: 576px) { 
+	h1{ font-size: 20px; line-height: normal;}
+	.contenedor-descripcion{
+		width: 50%;
+		position: static;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+	
 }
 #nosotros{
-    background-image: url('/images/portada-4.png');
+    background-image: url('/images/portadas/portada1.png');
     background-size: cover;
     padding-top: 150px;
     min-height: 570px;

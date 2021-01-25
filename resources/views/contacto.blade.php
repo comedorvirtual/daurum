@@ -1,18 +1,19 @@
 @extends('layouts.app')
 @section('content')
-    <section>
-        <div class="container">
+    <section id="contacto">
+        <div class="container-fluid">
             <div class="row pt-5 justify-content-center" >
-
                 <div class="col-12 pb-5">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">
                             {{ session('status') }}
                         </div>
                     @endif
-                    <h1 class="content-center">Contactenos</h1>
+                    <h1 class="content-center">Contáctenos</h1>
                 </div>
-                <div class="col-6 justify-content-center">
+            </div>
+            <div class="row align-items-center">
+                <div class="col-6 ">
                     <form method="POST" action="{{url('contacto/create')}}" class="col-10 ">
                         @csrf
                         <div class="form-group">
@@ -31,23 +32,23 @@
                     </form>
                 </div>
                 <div class="col-6">
-                    <div class="col-12 pl-5 ">
+                    <div class="col-12">
                         <div class="row ">
                             <h5>Direccion:</h5>
-                            <p class="ml-5 col-12">Calle Santa Marta 220, Cercado - Arequipa </p>
+                            <p class="col-12">Calle Santa Marta 220, Cercado - Arequipa </p>
                         </div>
                         <div class="row">
                             <h5>Teléfono:</h5>
-                            <p class="ml-5 col-12">+054 220626 </p>
-                            <p class="ml-5 col-12">+051 934 108 517 </p>
+                            <p class="col-12">+054 999999 </p>
+                            <p class="col-12">+051 99999999 </p>
                         </div>
                         <div class="row">
                             <h5>Correo:</h5>
-                            <p class="ml-5 col-12">opticamunozaqp@gmail.com</p>
+                            <p class="col-12">laboratoriodaurum@gmail.com</p>
                         </div>
                         <div class="row">
                             <h5>Whatsapp:</h5>
-                            <p class="ml-5 col-12">+051 934 108 517</p>
+                            <p class="col-12">+051 99999999</p>
                         </div> 
                     </div>
                 </div>

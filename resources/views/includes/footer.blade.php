@@ -1,9 +1,9 @@
-<footer class="bg-dark text-white py-4">
+<footer class="bg-lightblue text-black py-4">
     <div class="container ">
         <div class="row ">
             <div class="logo-footer col-6">
                 <a href="/">
-                    <img src="{{asset('/images/logo-completo.png')}}" alt="logo.jpg" class="img-logo-footer">
+                    <img src="{{asset('/images/logo/logo-corto.png')}}" alt="logo.jpg" class="img-logo-footer">
                 </a>
             </div>
                         

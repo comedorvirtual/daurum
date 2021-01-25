@@ -1,27 +1,43 @@
 @extends('layouts.app')
 @section('content')
+    <section class="imageInicial">
+        <div class="contenedor-imagen-inicial">
+            <div class="row contenedor-descripcion ">
+                <div class="col-12" >
+                    <h1>Laboratorio</h1>
+                    <h1>DAURUM</h1>
+                </div>
+            </div>
+            <div class="contenedor-imagen-inicial">
+                <img src="{{asset('/images/portadas/portada4.png')}}" alt="imagen-portada">
+            </div>
+        </div>
+    </section>
+
+
     <section class="wrap">
         <h1>Escoge un producto</h1>
         <div class="container store-wrapper">
                 <div class="category_list">
-                    <a href="#" class="category_item" category="all">Todo</a>
-                    <a href="#" class="category_item" category="mujer">Mujer</a>
-                    <a href="#" class="category_item sub_mujer mujer_acetato hide" category="mujer_acetato">Acetato</a>
-                    <a href="#" class="category_item sub_mujer mujer_aluminio hide" category="mujer_aluminio">Aluminio</a>
-                    <a href="#" class="category_item sub_mujer mujer_metal hide" category="mujer_metal">Metal</a>
-                    <a href="#" class="category_item sub_mujer mujer_tr90 hide" category="mujer_tr90">TR-90</a>
-                    <a href="#" class="category_item" category="hombre">Hombres</a>
-                    <a href="#" class="category_item sub_hombre hombre_acetato hide" category="hombre_acetato">Acetato</a>
-                    <a href="#" class="category_item sub_hombre hombre_aluminio hide" category="hombre_aluminio">Aluminio</a>
-                    <a href="#" class="category_item sub_hombre hombre_metal hide" category="hombre_metal">Metal</a>
-                    <a href="#" class="category_item sub_hombre hombre_tr90 hide" category="hombre_tr90">TR-90</a>
-                    <a href="#" class="category_item" category="infante">Niños</a>
-                    <a href="#" class="category_item sub_infante infante_acetato hide" category="infante_acetato">Acetato</a>
-                    <a href="#" class="category_item sub_infante infante_aluminio hide" category="infante_aluminio">Aluminio</a>
-                    <a href="#" class="category_item sub_infante infante_metal hide" category="infante_metal">Metal</a>
-                    <a href="#" class="category_item sub_infante infante_tr90 hide" category="infante_tr90">TR-90</a>
+                    <a href="#productos-lista" class="category_item" category="all">Todo</a>
+                    <a href="#productos-lista" class="category_item" category="mujer">Mujer</a>
+                    <a href="#productos-lista" class="category_item sub_mujer mujer_acetato hide" category="mujer_acetato">Acetato</a>
+                    <a href="#productos-lista" class="category_item sub_mujer mujer_aluminio hide" category="mujer_aluminio">Aluminio</a>
+                    <a href="#productos-lista" class="category_item sub_mujer mujer_metal hide" category="mujer_metal">Metal</a>
+                    <a href="#productos-lista" class="category_item sub_mujer mujer_tr90 hide" category="mujer_tr90">TR-90</a>
+                    <a href="#productos-lista" class="category_item" category="hombre">Hombres</a>
+                    <a href="#productos-lista" class="category_item sub_hombre hombre_acetato hide" category="hombre_acetato">Acetato</a>
+                    <a href="#productos-lista" class="category_item sub_hombre hombre_aluminio hide" category="hombre_aluminio">Aluminio</a>
+                    <a href="#productos-lista" class="category_item sub_hombre hombre_metal hide" category="hombre_metal">Metal</a>
+                    <a href="#productos-lista" class="category_item sub_hombre hombre_tr90 hide" category="hombre_tr90">TR-90</a>
+                    <a href="#productos-lista" class="category_item" category="infante">Niños</a>
+                    <a href="#productos-lista" class="category_item sub_infante infante_acetato hide" category="infante_acetato">Acetato</a>
+                    <a href="#productos-lista" class="category_item sub_infante infante_aluminio hide" category="infante_aluminio">Aluminio</a>
+                    <a href="#productos-lista" class="category_item sub_infante infante_metal hide" category="infante_metal">Metal</a>
+                    <a href="#productos-lista" class="category_item sub_infante infante_tr90 hide" category="infante_tr90">TR-90</a>
                 </div>
-                <div class="products-list">
+                <div id="productos-lista" class="products-list">
+                <!--
                     <div class="product-item acetato mujer hide" category="hombre">
                         <a href="#"><img src="{{ asset('/images/producto/lente-1-a.jpg') }}" alt=""></a>
                     </div>
@@ -208,15 +224,15 @@
                     <div class="product-item metal mujer hide" category="monitores">
                         <img src="{{ asset('/images/producto/lente-62-a.jpg') }}" alt="">
                     </div>
+                    -->
                 </div>
             
             <div class="pagination justify-content-center">
-                <div class="prev">Prev</div>
-                <div class="page">Page <span class="page-num"></span></div>
-                <div class="next">Next</div>
+                <div class="prev">Anterior</div>
+                <div class="page">Pagina <span class="page-num"></span></div>
+                <div class="next">Siguiente</div>
             </div>
         </div>
     </section>
-
 
 @endsection
